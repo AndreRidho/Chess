@@ -9,4 +9,6 @@ Each of these children Nodes will have their own children Nodes of possible move
 
 In order to implement checks and checkmates, the Node that the player is currently on must iterate through its children and find out which ones contain the scenario that one of the Kings is captured.
 
-This further depends on whose turn it is. If it is white’s turn and one of the grandchildren (children of the children) Nodes contain the scenario that the white King is captured, then the move that allows for that scenario to happen will not be available for the white player. 
+This further depends on whose turn it is. If it is white’s turn and one of the grandchildren (children of the children) Nodes contain the scenario that the white King is captured, then the move that allows for that scenario to happen will not be available for the white player.
+
+File locations have to be changed.
