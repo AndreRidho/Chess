@@ -11,4 +11,4 @@ In order to implement checks and checkmates, the Node that the player is current
 
 This further depends on whose turn it is. If it is white’s turn and one of the grandchildren (children of the children) Nodes contain the scenario that the white King is captured, then the move that allows for that scenario to happen will not be available for the white player.
 
-File locations have to be changed.
+File locations have to be changed. Castling, en passant and promotions have not been implemented.
