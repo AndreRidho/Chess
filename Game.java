@@ -33,7 +33,6 @@ public class Game extends Application{
 	static boolean turnColor;
 	
 	Pane pane = new Pane();
-	Pane promotionPane = new Pane();
 	Scene scene;
 	
 	public static String[][] getBoard() {
@@ -67,13 +66,6 @@ public class Game extends Application{
 		boardPic.setFitHeight(720);
 		boardPic.setFitWidth(720);
 		pane.getChildren().add(boardPic);
-		
-		//Promotion piece selection pane		
-		promotionPane.setPrefSize(720, 720);
-		ImageView graySquare = new ImageView("file:\\C:\\Users\\mbrid\\eclipse-workspace2\\calc3\\src\\chess\\GraySquare.jpg");
-		graySquare.setFitHeight(720);
-		graySquare.setFitWidth(720);
-		promotionPane.getChildren().add(graySquare);
 		
 		//Randomly assigning sides
 		turnColor = (Math.random() < 0.5);
