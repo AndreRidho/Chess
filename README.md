@@ -1,5 +1,5 @@
-# 2v2 JavaFX Chess
-A personal project of mine: a 2v2 chess game, built with JavaFX.
+# 1v1 JavaFX Chess
+A personal project of mine: a 1v1 chess game, built with JavaFX.
 
 Obviously there are many flaws with this code. I started working on the frontend (the JavaFX interface) and incorporated certain vital functions with it such as setting piece positions. Only after finishing did I realize that I needed a Tree to implement checks and checkmates. This led to many refactoring issues. Also, I faced many problems due to setting the coordinates of a piece as an Integer. My code would be a lot simpler if they were Strings.
 
