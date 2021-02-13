@@ -11,4 +11,6 @@ In order to implement checks and checkmates, the Node that the player is current
 
 This further depends on whose turn it is. If it is white’s turn and one of the grandchildren (children of the children) Nodes contain the scenario that the white King is captured, then the move that allows for that scenario to happen will not be available for the white player.
 
-File locations have to be changed. Castling, en passant and promotions have not been implemented.
+File locations have to be changed. Castling, en passant and promotions have not been implemented. You may have to add in these VM arguments, replacing the file location with the location of your lib folder:
+
+--module-path "C:\Users\mbrid\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib" --add-modules=javafx.swing,javafx.graphics,javafx.fxml,javafx.media,javafx.web --add-reads javafx.graphics=ALL-UNNAMED --add-opens javafx.controls/com.sun.javafx.charts=ALL-UNNAMED --add-opens javafx.graphics/com.sun.javafx.iio=ALL-UNNAMED --add-opens javafx.graphics/com.sun.javafx.iio.common=ALL-UNNAMED --add-opens javafx.graphics/com.sun.javafx.css=ALL-UNNAMED --add-opens javafx.base/com.sun.javafx.runtime=ALL-UNNAMED
