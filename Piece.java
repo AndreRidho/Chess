@@ -121,7 +121,7 @@ public abstract class Piece implements Cloneable{
 		Game.moves = this.showMoves(board, pieces);
 		Game.activePiece = this;
 		
-		//Preventing suicide moves
+		//Preventing suicide moves and implementing checks, checkmates
 		for(Node n: Game.currentNode.children) {
 			for(Node o: n.children) {
 				if(o.kingsDead()) {
@@ -136,7 +136,7 @@ public abstract class Piece implements Cloneable{
 		
 		for(String s: Game.moves){
 			
-			//Load the target png and set it wherever there is a valid move
+			//Load the target png and put it wherever there is a valid move
 			int i = Integer.parseInt(s.substring(1));
 			ImageView target = new ImageView("file:\\C:\\Users\\mbrid\\eclipse-workspace2\\calc3\\src\\chess\\target.png");
 			pane.getChildren().add(target);
@@ -193,10 +193,9 @@ public abstract class Piece implements Cloneable{
 		
 	}
 	
-	public Object clone() throws CloneNotSupportedException
-    {
-        return super.clone();
-    }
+	public Object clone() throws CloneNotSupportedException{
+		return super.clone();
+	}
 
 }
 
